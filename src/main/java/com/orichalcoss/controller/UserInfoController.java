@@ -18,6 +18,7 @@ public class UserInfoController {
     @Autowired
     private UserInfoService userInfoService;
 
+
     @RequestMapping("/getUserInfoById")
     public User getUserById(@RequestParam int id){
         logger.info("enter UserInfoController.getUserById,param is id",id);
