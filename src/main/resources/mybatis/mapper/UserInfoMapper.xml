@@ -17,4 +17,16 @@
         from user_info where id = #{id,jdbcType=INTEGER}
     </select>
 
+    <select id="selectUserByIds" parameterType="java.util.List" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from user_info
+        where id in
+        <foreach collection="list" item="id" open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+    </select>
+
+
+
 </mapper>
