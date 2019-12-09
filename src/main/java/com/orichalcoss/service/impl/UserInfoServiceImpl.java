@@ -2,6 +2,7 @@ package com.orichalcoss.service.impl;
 
 import com.orichalcoss.dal.UserInfoDao;
 import com.orichalcoss.model.User;
+import com.orichalcoss.proxy.UserInfoProxyService;
 import com.orichalcoss.service.UserInfoService;
 import com.orichalcoss.utils.RedisUtils;
 import com.orichalcoss.utils.RestTemplateUtils;
@@ -28,12 +29,12 @@ public class UserInfoServiceImpl implements UserInfoService {
     @Autowired
     RestTemplateUtils restTemplateUtils;
 
+    @Autowired
+    UserInfoProxyService userInfoProxyService;
     @Override
     public User getUserInfoById(int id){
         logger.info("enter UserInfoServiceImpl.getUserById,param is id",id);
-        User user = userInfoDao.getUserInfoById(id);
-//        String eamil = restTemplateUtils.get("https://www.baidu.com");
-//        user.setEmail(eamil);
+        User user = userInfoProxyService.getUserInfoById(id);
         return user;
     }
 

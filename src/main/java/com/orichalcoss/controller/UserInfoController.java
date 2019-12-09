@@ -25,7 +25,7 @@ public class UserInfoController {
     public User getUserById(@RequestParam int id){
         logger.info("enter UserInfoController.getUserById,param is id",id);
         return userInfoService.getUserInfoById(id);
-    };
+    }
 
     @RequestMapping("/getUserInfoByIds")
     public List<User> getUserByIds(@RequestParam String ids){
