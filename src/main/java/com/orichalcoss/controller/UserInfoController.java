@@ -1,6 +1,6 @@
 package com.orichalcoss.controller;
 
-import com.orichalcoss.model.User;
+import com.orichalcoss.model.UserInfo;
 import com.orichalcoss.service.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,14 +22,14 @@ public class UserInfoController {
 
 
     @RequestMapping("/getUserInfoById")
-    public User getUserById(@RequestParam int id){
+    public UserInfo getUserById(@RequestParam int id){
         logger.info("enter UserInfoController.getUserById,param is id",id);
         return userInfoService.getUserInfoById(id);
     }
 
     @RequestMapping("/getUserInfoByIds")
-    public List<User> getUserByIds(@RequestParam String ids){
+    public List<UserInfo> getUserByIds(@RequestParam String ids){
         logger.info("enter UserInfoController.getUserById,param is id",ids);
         return userInfoService.getUserInfoByIds(ids);
-    };
+    }
 }

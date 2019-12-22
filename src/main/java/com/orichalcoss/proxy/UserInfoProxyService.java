@@ -1,7 +1,7 @@
 package com.orichalcoss.proxy;
 
-import com.orichalcoss.model.User;
+import com.orichalcoss.model.UserInfo;
 
 public interface UserInfoProxyService {
-    User getUserInfoById(Integer id);
+    UserInfo getUserInfoById(Integer id);
 }

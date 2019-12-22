@@ -4,9 +4,9 @@ spring:
   #数据库连接配置
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.102.219:3306/yh_community?characterEncoding=utf-8&useSSL=false
-    username: yh_test
-    password: yh_test
+    url: jdbc:mysql://127.0.0.1:3306/person-manage?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
   #redis配置
   redis:
     host: 127.0.0.1

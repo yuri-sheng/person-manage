@@ -23,7 +23,10 @@ public class LoginServiceImpl implements LoginService {
             return ApiResponse.newInstance(400,"密码格式不正确，请重新输入！");
         }
         UserProfile userProfile = userProfileDao.getUserProfileByMobile(mobile);
-        if(userProfile.getPassword().equals(userProfileReq.getPassword())){
+        if(userProfile == null){
+            return ApiResponse.newInstance(400,"账号不存在，请重新输入！");
+        }
+        if(!userProfile.getPassword().equals(userProfileReq.getPassword())){
             return ApiResponse.newInstance(400,"密码不正确，请重新输入！");
         }
         return ApiResponse.newInstance(200,"登录成功");

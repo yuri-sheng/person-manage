@@ -1,10 +1,10 @@
 package com.orichalcoss.service;
 
-import com.orichalcoss.model.User;
+import com.orichalcoss.model.UserInfo;
 
 import java.util.List;
 
 public interface UserInfoService {
-    User getUserInfoById(int id);
-    List<User> getUserInfoByIds(String ids);
+    UserInfo getUserInfoById(int id);
+    List<UserInfo> getUserInfoByIds(String ids);
 }

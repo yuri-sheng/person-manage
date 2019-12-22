@@ -4,16 +4,16 @@ public class UserProfile {
     private int id;
     private String mobile;
     private String password;
-    private String eamil;
+    private String email;
 
     public UserProfile() {
     }
 
-    public UserProfile(int id, String mobile, String password, String eamil) {
+    public UserProfile(int id, String mobile, String password, String email) {
         this.id = id;
         this.mobile = mobile;
         this.password = password;
-        this.eamil = eamil;
+        this.email = email;
     }
 
     public int getId() {
@@ -40,12 +40,12 @@ public class UserProfile {
         this.password = password;
     }
 
-    public String getEamil() {
-        return eamil;
+    public String getEmail() {
+        return email;
     }
 
-    public void setEamil(String eamil) {
-        this.eamil = eamil;
+    public void setEamil(String email) {
+        this.email = email;
     }
 
     @Override
@@ -54,7 +54,7 @@ public class UserProfile {
                 "id=" + id +
                 ", mobile='" + mobile + '\'' +
                 ", password='" + password + '\'' +
-                ", eamil='" + eamil + '\'' +
+                ", email='" + email + '\'' +
                 '}';
     }
 }

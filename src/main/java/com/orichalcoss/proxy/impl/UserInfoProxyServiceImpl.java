@@ -2,7 +2,7 @@ package com.orichalcoss.proxy.impl;
 
 import com.alibaba.fastjson.JSONObject;
 import com.orichalcoss.dal.UserInfoDao;
-import com.orichalcoss.model.User;
+import com.orichalcoss.model.UserInfo;
 import com.orichalcoss.proxy.UserInfoProxyService;
 import com.orichalcoss.utils.RedisUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,13 +22,13 @@ public class UserInfoProxyServiceImpl implements UserInfoProxyService {
     private static String REDIS_USER_INFO = "user:info:";
 
     @Override
-    public User getUserInfoById(Integer id) {
+    public UserInfo getUserInfoById(Integer id) {
         String str = redisUtils.get(REDIS_USER_INFO + id);
         if (str != null) {
-            User user = JSONObject.parseObject(str, User.class);
-            return user;
+            UserInfo userInfo = JSONObject.parseObject(str, UserInfo.class);
+            return userInfo;
         } else {
-            User user = userInfoDao.getUserInfoById(id);
+            UserInfo user = userInfoDao.getUserInfoById(id);
             redisUtils.set(REDIS_USER_INFO + id,JSONObject.toJSONString(user));
             return user;
         }
