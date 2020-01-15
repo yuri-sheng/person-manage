@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace = "com.orichalcoss.dal.LoginLogDao">
+    <resultMap id="BaseResultMap" type="com.orichalcoss.model.LoginTime">
+        <id column="uid"  property="id" jdbcType="INTEGER"/>
+        <result column="login_time" property="time" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+      uid,login_time
+    </sql>
+
+    <insert id="loginTime" parameterType="com.orichalcoss.model.LoginTime">
+        insert into login_log(uid,login_time)
+        value(#{id},#{time})
+    </insert>
+
+</mapper>
