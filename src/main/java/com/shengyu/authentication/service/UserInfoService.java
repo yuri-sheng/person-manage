@@ -1,6 +1,6 @@
-package com.shengyu.service;
+package com.shengyu.authentication.service;
 
-import com.shengyu.model.UserInfo;
+import com.shengyu.authentication.model.UserInfo;
 
 import java.util.List;
 

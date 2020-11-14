@@ -1,7 +1,7 @@
-package com.shengyu.service;
+package com.shengyu.authentication.service;
 
-import com.shengyu.model.ApiResponse;
-import com.shengyu.model.UserProfile;
+import com.shengyu.authentication.model.ApiResponse;
+import com.shengyu.authentication.model.UserProfile;
 
 public interface RegisterService {
     ApiResponse registerByMobile(UserProfile userProfile);

@@ -1,9 +1,9 @@
-package com.shengyu.service.impl;
+package com.shengyu.authentication.service.impl;
 
-import com.shengyu.dao.UserInfoDao;
-import com.shengyu.model.UserInfo;
-import com.shengyu.service.UserInfoService;
-import com.shengyu.utils.StringUtils;
+import com.shengyu.authentication.dao.UserInfoDao;
+import com.shengyu.authentication.model.UserInfo;
+import com.shengyu.authentication.service.UserInfoService;
+import com.shengyu.authentication.utils.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.shengyu.model;
+package com.shengyu.authentication.model;
 
 public class ApiResponse {
     private int code;

@@ -1,10 +1,10 @@
-package com.shengyu.proxy.impl;
+package com.shengyu.authentication.proxy.impl;
 
 import com.alibaba.fastjson.JSONObject;
-import com.shengyu.dao.UserInfoDao;
-import com.shengyu.model.UserInfo;
-import com.shengyu.proxy.UserInfoProxyService;
-import com.shengyu.utils.RedisUtils;
+import com.shengyu.authentication.utils.RedisUtils;
+import com.shengyu.authentication.dao.UserInfoDao;
+import com.shengyu.authentication.model.UserInfo;
+import com.shengyu.authentication.proxy.UserInfoProxyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

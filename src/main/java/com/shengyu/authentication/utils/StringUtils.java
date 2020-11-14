@@ -1,4 +1,4 @@
-package com.shengyu.utils;
+package com.shengyu.authentication.utils;
 
 import java.util.ArrayList;
 import java.util.List;

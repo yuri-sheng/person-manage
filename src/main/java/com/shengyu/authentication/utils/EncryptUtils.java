@@ -1,4 +1,4 @@
-package com.shengyu.utils;
+package com.shengyu.authentication.utils;
 
 import com.google.common.base.Suppliers;
 import org.springframework.util.DigestUtils;

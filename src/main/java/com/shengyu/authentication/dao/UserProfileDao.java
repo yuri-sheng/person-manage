@@ -1,6 +1,6 @@
-package com.shengyu.dao;
+package com.shengyu.authentication.dao;
 
-import com.shengyu.model.UserProfile;
+import com.shengyu.authentication.model.UserProfile;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper

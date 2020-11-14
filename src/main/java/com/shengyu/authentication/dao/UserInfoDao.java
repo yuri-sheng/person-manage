@@ -1,6 +1,6 @@
-package com.shengyu.dao;
+package com.shengyu.authentication.dao;
 
-import com.shengyu.model.UserInfo;
+import com.shengyu.authentication.model.UserInfo;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

@@ -1,12 +1,12 @@
-package com.shengyu.service.impl;
+package com.shengyu.authentication.service.impl;
 
-import com.shengyu.dao.LoginLogDao;
-import com.shengyu.dao.UserProfileDao;
-import com.shengyu.model.ApiResponse;
-import com.shengyu.model.LoginTime;
-import com.shengyu.model.UserProfile;
-import com.shengyu.service.LoginService;
-import com.shengyu.utils.EncryptUtils;
+import com.shengyu.authentication.dao.LoginLogDao;
+import com.shengyu.authentication.dao.UserProfileDao;
+import com.shengyu.authentication.model.ApiResponse;
+import com.shengyu.authentication.model.LoginTime;
+import com.shengyu.authentication.model.UserProfile;
+import com.shengyu.authentication.service.LoginService;
+import com.shengyu.authentication.utils.EncryptUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

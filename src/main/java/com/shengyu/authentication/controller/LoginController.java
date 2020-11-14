@@ -1,8 +1,8 @@
-package com.shengyu.controller;
+package com.shengyu.authentication.controller;
 
-import com.shengyu.model.ApiResponse;
-import com.shengyu.model.UserProfile;
-import com.shengyu.service.LoginService;
+import com.shengyu.authentication.model.ApiResponse;
+import com.shengyu.authentication.model.UserProfile;
+import com.shengyu.authentication.service.LoginService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

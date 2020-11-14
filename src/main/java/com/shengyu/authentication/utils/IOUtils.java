@@ -1,4 +1,4 @@
-package com.shengyu.utils;
+package com.shengyu.authentication.utils;
 
 import reactor.util.Logger;
 import reactor.util.Loggers;

@@ -1,6 +1,6 @@
-package com.shengyu.dao;
+package com.shengyu.authentication.dao;
 
-import com.shengyu.model.LoginTime;
+import com.shengyu.authentication.model.LoginTime;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
