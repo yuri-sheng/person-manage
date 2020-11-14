@@ -1,6 +1,6 @@
-package com.orichalcoss.dal;
+package com.shengyu.dal;
 
-import com.orichalcoss.model.LoginTime;
+import com.shengyu.model.LoginTime;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper

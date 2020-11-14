@@ -25,4 +25,10 @@ public class LoginController {
         return loginService.login(userProfile);
     }
 
+    @RequestMapping("/loginByMobiles")
+    public ApiResponse loginByMobile(){
+        logger.info("enter LoginController.loginByMobile,param is null");
+        return new ApiResponse();
+    }
+
 }

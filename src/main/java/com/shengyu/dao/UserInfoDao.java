@@ -1,6 +1,6 @@
-package com.orichalcoss.dal;
+package com.shengyu.dal;
 
-import com.orichalcoss.model.UserInfo;
+import com.shengyu.model.UserInfo;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
