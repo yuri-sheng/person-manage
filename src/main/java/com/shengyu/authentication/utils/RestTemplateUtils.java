@@ -6,7 +6,6 @@ import org.springframework.web.client.RestTemplate;
 
 @Component
 public class RestTemplateUtils {
-
     @Autowired
     private static RestTemplate restTemplate;
 

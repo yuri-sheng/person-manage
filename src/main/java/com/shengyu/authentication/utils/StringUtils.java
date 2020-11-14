@@ -14,4 +14,16 @@ public class StringUtils {
         }
         return result;
     }
+
+    public static boolean nullOrEmpty(String str) {
+        if (str == null || str.length() == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public static boolean notBlank(String str) {
+       return nullOrEmpty(str);
+    }
 }

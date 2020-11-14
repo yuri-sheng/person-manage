@@ -2,17 +2,20 @@ package com.shengyu.model;
 
 public class UserProfile {
     private int id;
+    private String name;
     private String mobile;
     private String password;
     private String email;
 
-    public UserProfile() {
+    public String getName() {
+        return name;
     }
 
-    public UserProfile(int id, String mobile, String password, String email) {
-        this.id = id;
-        this.mobile = mobile;
-        this.password = password;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setEmail(String email) {
         this.email = email;
     }
 
