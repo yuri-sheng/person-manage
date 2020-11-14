@@ -1,6 +1,6 @@
-package com.orichalcoss.proxy;
+package com.shengyu.proxy;
 
-import com.orichalcoss.model.UserInfo;
+import com.shengyu.model.UserInfo;
 
 public interface UserInfoProxyService {
     UserInfo getUserInfoById(Integer id);

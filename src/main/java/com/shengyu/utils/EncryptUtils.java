@@ -1,32 +1,4 @@
-package com.orichalcoss.utils;
+package com.shengyu.utils;
 
 public class EncryptUtils {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

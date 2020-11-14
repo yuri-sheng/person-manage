@@ -1,10 +1,10 @@
-package com.orichalcoss.proxy.impl;
+package com.shengyu.proxy.impl;
 
 import com.alibaba.fastjson.JSONObject;
-import com.orichalcoss.dal.UserInfoDao;
-import com.orichalcoss.model.UserInfo;
-import com.orichalcoss.proxy.UserInfoProxyService;
-import com.orichalcoss.utils.RedisUtils;
+import com.shengyu.dao.UserInfoDao;
+import com.shengyu.model.UserInfo;
+import com.shengyu.proxy.UserInfoProxyService;
+import com.shengyu.utils.RedisUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -29,7 +29,7 @@ public class UserInfoProxyServiceImpl implements UserInfoProxyService {
             return userInfo;
         } else {
             UserInfo user = userInfoDao.getUserInfoById(id);
-            redisUtils.set(REDIS_USER_INFO + id,JSONObject.toJSONString(user));
+            redisUtils.set(REDIS_USER_INFO + id, JSONObject.toJSONString(user));
             return user;
         }
     }

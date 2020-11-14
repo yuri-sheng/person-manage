@@ -1,14 +1,14 @@
-package com.orichalcoss.model;
+package com.shengyu.model;
 
 public class ApiResponse {
     private int code;
     private String message;
 
-    public static ApiResponse newInstance(){
+    public static ApiResponse newInstance() {
         return new ApiResponse(200,"success");
     }
 
-    public static ApiResponse newInstance(int code,String message){
+    public static ApiResponse newInstance(int code,String message) {
         return new ApiResponse(code,message);
     }
 

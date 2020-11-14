@@ -1,4 +1,4 @@
-package com.orichalcoss.utils;
+package com.shengyu.utils;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -14,5 +14,4 @@ public class RestTemplateUtils {
         String result = restTemplate.getForObject(url, String.class);
         return result;
     }
-
 }

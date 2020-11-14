@@ -1,4 +1,4 @@
-package com.orichalcoss.model;
+package com.shengyu.model;
 
 import java.util.Date;
 

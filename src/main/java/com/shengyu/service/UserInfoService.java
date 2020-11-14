@@ -1,6 +1,6 @@
-package com.orichalcoss.service;
+package com.shengyu.service;
 
-import com.orichalcoss.model.UserInfo;
+import com.shengyu.model.UserInfo;
 
 import java.util.List;
 

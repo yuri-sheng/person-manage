@@ -1,4 +1,4 @@
-package com.shengyu.dal;
+package com.shengyu.dao;
 
 import com.shengyu.model.LoginTime;
 import org.apache.ibatis.annotations.Mapper;

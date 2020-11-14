@@ -1,4 +1,4 @@
-package com.orichalcoss.model;
+package com.shengyu.model;
 
 public class UserInfo {
     private int id;
